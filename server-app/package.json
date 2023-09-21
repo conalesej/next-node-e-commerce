@@ -1,0 +1,17 @@
+{
+  "name": "server-app",
+  "version": "1.0.0",
+  "description": "Backend service for an e-commerce store",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.ts",
+    "dev": "nodemon --exec npx ts-node ./src/index.ts"
+  },
+  "author": "conalesej",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  }
+}
