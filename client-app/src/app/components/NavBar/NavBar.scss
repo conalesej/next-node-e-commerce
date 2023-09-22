@@ -1,0 +1,38 @@
+.navbar {
+  background-color: peach;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  height: 7vh;
+
+  .nav-left {
+    flex-basis: 40%;
+
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+
+    background: lightpink;
+  }
+
+  .nav-right {
+    flex-basis: 60%;
+
+    background: brown;
+    display: flex;
+    gap: 5px;
+
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-item {
+    text-decoration: none;
+  }
+  .avatar {
+    margin-right: 20px;
+  }
+}
