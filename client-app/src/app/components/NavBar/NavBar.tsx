@@ -2,6 +2,9 @@ import React from "react";
 import "./NavBar.scss";
 import Link from "next/link";
 import { Avatar } from "@mui/material";
+import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
+import SearchBar from "@/app/landing/components/Search/SearchBar";
 
 const NavBar: React.FC = () => {
   return (
@@ -22,11 +25,12 @@ const NavBar: React.FC = () => {
       </div>
 
       <div className="nav-right">
+        <div className="nav-searchbar"></div>
         <Link href="/landing" className="navbar-brand">
-          E-Commerce Store
+          <SearchBar />
         </Link>
         <Link href="/" className="nav-item">
-          Categories
+          <ShoppingCartIcon />
         </Link>
         <div className="nav-item avatar">
           <Avatar alt="User Avatar" src="https://unsplash.it/g/640/425" />

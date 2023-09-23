@@ -15,24 +15,28 @@
     justify-content: space-around;
     align-items: center;
 
-    background: lightpink;
+    background: white;
   }
 
   .nav-right {
     flex-basis: 60%;
+    background: white;
 
-    background: brown;
     display: flex;
-    gap: 5px;
+    gap: 12px;
 
     justify-content: flex-end;
     align-items: center;
+
+    .nav-searchbar {
+      width: 200px;
+    }
   }
 
   .nav-item {
     text-decoration: none;
   }
   .avatar {
-    margin-right: 20px;
+    margin-right: 36px;
   }
 }
