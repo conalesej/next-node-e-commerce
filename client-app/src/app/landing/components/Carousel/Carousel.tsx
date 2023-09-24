@@ -1,14 +1,9 @@
-import React from 'react'
+import React from "react";
+import "./Carousel.scss";
 
-
-
-interface ICarousel{
-
-}
+interface ICarousel {}
 const Carousel: React.FC<ICarousel> = () => {
-  return (
-    <div>Carousel</div>
-  )
-}
+  return <div className="Carousel">Carousel</div>;
+};
 
-export default Carousel
+export default Carousel;
