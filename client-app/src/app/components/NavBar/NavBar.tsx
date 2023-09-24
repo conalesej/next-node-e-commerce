@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Avatar } from "@mui/material";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
-import SearchBar from "@/app/landing/components/Search/SearchBar";
+import { SearchBar } from "@/app/landing/components";
 
 const NavBar: React.FC = () => {
   return (
