@@ -1,0 +1,28 @@
+.Landing {
+  //   background: lightcoral;
+  padding: 60px 70px 30px;
+  height: auto;
+  width: 100%;
+
+  .carousel-category-container {
+    // outline: 1px solid red;
+    min-height: 500px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    .carousel-container {
+      background: #0081f9;
+      border-radius: 10px;
+      overflow: hidden;
+
+      flex-basis: 65%;
+    }
+    .category-container {
+      background: yellow;
+      padding: 10px;
+      flex-basis: 35%;
+    }
+  }
+}
