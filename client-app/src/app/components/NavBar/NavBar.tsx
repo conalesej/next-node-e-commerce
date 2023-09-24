@@ -8,7 +8,7 @@ import SearchBar from "@/app/landing/components/Search/SearchBar";
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="navbar">
+    <nav className="Navbar">
       <div className="nav-left">
         <Link href="/landing" className="navbar-brand">
           E-Commerce Store
