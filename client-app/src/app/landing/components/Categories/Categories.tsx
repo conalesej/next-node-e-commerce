@@ -1,15 +1,23 @@
 import React from "react";
 import "./Categories.scss";
+import CategoryCard from "./CategoryCard/CategoryCard";
 
 interface ICategories {}
 const Categories: React.FC<ICategories> = () => {
   return (
     <div className="Categories">
-      <div className="category-item-1">1</div>
-      <div className="category-item-2">2</div>
-
-      <div className="category-item-3">3</div>
-      <div className="category-item-4">4</div>
+      <div className="category-item-1">
+        <CategoryCard />
+      </div>
+      <div className="category-item-2">
+        <CategoryCard />
+      </div>
+      <div className="category-item-3">
+        <CategoryCard />
+      </div>
+      <div className="category-item-4">
+        <CategoryCard />
+      </div>
     </div>
   );
 };
