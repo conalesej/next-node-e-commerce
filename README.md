@@ -33,7 +33,38 @@ This project is a web-based platform for buying and selling cars online. It prov
 
 ## Getting Started
 
-1. **Clone the repository:**
+ **Clone the repository:**
 
    ```shell
    git clone https://github.com/conalesej/next-node-e-commerce.git
+   ```
+
+### Install Dependencies
+
+1. **Install Frontend Dependencies:**
+
+   ```shell
+   cd client-app
+   npm install
+2. **Install Backend Dependencies:**
+   ```shell
+   cd server-app
+   npm install
+3. **Set Up Environment Variables:**
+  ```shell
+   TBD
+  ```
+### Run the Application
+1. Start the Frontend:
+   ```shell
+    cd ../client-app
+    npm run dev
+    ```
+2. Start the Backend:
+   ```shell
+    cd ../server-app
+    npm run dev
+    ```
+### Access the Application
+Open your web browser and navigate to http://localhost:3000 to use the car e-commerce platform.
+  
