@@ -11,12 +11,46 @@
   .card-polygon {
     position: relative;
     background: white;
-    height: 75%;
+    height: 65%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border-radius: 7px;
+
+    &::before {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 1;
+      width: 100%;
+      height: 35%;
+
+      transform: skew(0deg, -10deg);
+      transform-origin: left;
+
+      background-color: white;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+
+    }
+
+    .square::before {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 150px;
+
+      background: hsla(20, 100%, 50%, 0.6);
+
+      transform: skew(0deg, -10deg);
+    }
 
     .card-picture {
       position: absolute;
