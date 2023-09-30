@@ -1,6 +1,7 @@
 import React from "react";
 import "./Landing.scss";
 import { Carousel, Categories } from "./components";
+import { Typography } from "@mui/material";
 const page = () => {
   return (
     <div className="Landing">
@@ -11,6 +12,13 @@ const page = () => {
         <div className="category-container">
           <Categories />
         </div>
+      </div>
+      <div className="products-container">
+        <div className="title">
+          <Typography variant="h4">Our Products</Typography>
+        </div>
+        <div className="filter-bar"></div>
+        <div className="products-list"></div>
       </div>
     </div>
   );
