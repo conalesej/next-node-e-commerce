@@ -1,3 +1,4 @@
 import SwitchComponent from "./SwitchComponent/SwitchComponent";
 import ProductFilter from "./Filter/ProductFilter";
-export { SwitchComponent, ProductFilter };
+import PriceRange from "./PriceRange/PriceRange";
+export { SwitchComponent, ProductFilter, PriceRange };
