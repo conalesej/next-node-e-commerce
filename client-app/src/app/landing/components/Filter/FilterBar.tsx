@@ -1,21 +1,23 @@
 import React from "react";
 import "./FilterBar.scss";
-import { SwitchComponent } from "./components";
-const FilterBar = () => {
+import { SwitchComponent, ProductFilter, PriceRange } from "./components";
+
+interface IFilterBar {}
+const FilterBar: React.FC<IFilterBar> = () => {
   return (
     <div className="filter-container">
-      <div className="switch">
-        <SwitchComponent />
-      </div>
       <div className="filter">
-        <SwitchComponent />
+        <div className="switch">
+          <SwitchComponent />
+        </div>
+        <div className="filter">
+          <ProductFilter />
+        </div>
+        <div className="price-range">
+          <PriceRange />
+        </div>
       </div>
-      <div className="search">
-        <SwitchComponent />
-      </div>
-      <div className="price-range">
-        <SwitchComponent />
-      </div>
+      <div className="filter-chips">s</div>
     </div>
   );
 };

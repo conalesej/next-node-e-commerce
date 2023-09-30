@@ -3,5 +3,21 @@
   width: 100%;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 5px;
+  .filter {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter-chips {
+    background: pink;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
