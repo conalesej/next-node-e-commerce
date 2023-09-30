@@ -1,7 +1,8 @@
 import React from "react";
 import "./Landing.scss";
 import { Carousel, Categories, FilterBar } from "./components";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
+
 const page = () => {
   return (
     <div className="Landing">
