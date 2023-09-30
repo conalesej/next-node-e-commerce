@@ -25,4 +25,20 @@
       flex-basis: 35%;
     }
   }
+
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    .title {
+      height: auto;
+      width: 100%;
+    }
+
+    .filter-bar {
+      height: auto;
+      width: 100%;
+    }
+  }
 }
