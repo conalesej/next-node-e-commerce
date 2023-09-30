@@ -1,7 +1,8 @@
 import { Switch } from "@mui/material";
 import React from "react";
 
-const SwitchComponent = () => {
+interface ISwitchComponent {}
+const SwitchComponent: React.FC<ISwitchComponent> = () => {
   return (
     <>
       Best Sellers
