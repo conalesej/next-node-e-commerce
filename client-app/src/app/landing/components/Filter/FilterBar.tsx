@@ -25,7 +25,7 @@ const FilterBar: React.FC<IFilterBar> = () => {
           <PriceRange />
         </div>
       </div>
-      <div className="filter-chips">s</div>
+      <div className="filter-chips">filterchips</div>
     </div>
   );
 };

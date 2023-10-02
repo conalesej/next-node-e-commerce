@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.scss";
 import Link from "next/link";
-import { Avatar } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { SearchBar } from "@/app/landing/components";
