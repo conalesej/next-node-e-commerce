@@ -14,23 +14,74 @@
   gap: 5px;
 
   .image {
+    position: relative;
+
     width: auto;
     flex-basis: 60%;
     background: yellow;
 
     border-radius: 10px;
     overflow: hidden;
+    z-index: 1;
 
     .image-holder {
       height: 100%;
       width: 100%;
       overflow: hidden;
+      z-index: 2;
+    }
+    .body-type {
+      position: absolute;
+      width: fit-content;
+      top: 10px;
+      left: 10px;
+
+      
+      padding: 0.25rem 0.5rem;
+      
+      font-size: 0.75rem;
+      
+      border-radius: 12px;
+      background-color: whitesmoke;
+      
+      z-index: 100;
+
+      box-shadow: 0px 0px 10px 0px rgba(61, 59, 59, 0.75);
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(61, 59, 59, 0.75);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(61, 59, 59, 0.75);
     }
   }
 
   .description {
+    padding: 10px;
     width: auto;
     flex-basis: 40%;
-    background: green;
+    // background: green;
+    display: flex;
+    flex-direction: column;
+
+    .desc-header {
+      font-size: 1rem;
+      color: gray;
+    }
+    .desc-make-model {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .desc-mileage {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .desc-price {
+      margin-top: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: orange;
+    }
   }
 }
