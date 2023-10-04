@@ -10,11 +10,12 @@ interface IProduct {
   product: ICar;
 }
 const Product: React.FC<IProduct> = ({ product }) => {
+
   return (
     <div className="Product">
       <div className="image">
         <img
-          src={`https://source.unsplash.com/random/?Cars&${product.car_id}`}
+          src={`https://source.unsplash.com/random/?car&${product.car_id}`}
           alt="https://unsplash.it"
           className="image-holder"
         />
