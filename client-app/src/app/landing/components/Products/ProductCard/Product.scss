@@ -86,7 +86,7 @@
   }
 
   .add-button {
-    // visibility: ;
+    display: none;
     width: 100%;
 
     .button {
@@ -101,12 +101,22 @@
         rgba(252, 100, 57, 1) 100%
       );
       color: white;
-      font-size: 1.10rem;
+      font-size: 1.1rem;
       display: flex;
       justify-content: center;
       align-items: center;
 
       transition: all 0.3s ease-in-out 0s;
+    }
+
+    /* Button styles on hover */
+    .button:hover {
+      background: linear-gradient(
+        52deg,
+        rgba(252, 100, 57, 0.8) 0%,
+        rgba(252, 100, 57, 0.8) 100%
+      );
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
     }
   }
 }
