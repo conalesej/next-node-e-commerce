@@ -5,12 +5,12 @@ import { ICar } from "@/app/utils/types";
 
 import SpeedIcon from "@mui/icons-material/Speed";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
+import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
 import { formatNumberWithCommas } from "@/app/utils/util";
 interface IProduct {
   product: ICar;
 }
 const Product: React.FC<IProduct> = ({ product }) => {
-
   return (
     <div className="Product">
       <div className="image">
@@ -42,6 +42,11 @@ const Product: React.FC<IProduct> = ({ product }) => {
             style={{ marginRight: 5 }}
           />
           {formatNumberWithCommas(product.price)}
+        </div>
+      </div>
+      <div className="add-button">
+        <div className="button">
+          <LocalMallOutlinedIcon style={{ marginRight: 20 }} /> Add to Cart
         </div>
       </div>
     </div>
